@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/texllate/animate.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="center-content">
+            <div class="floating-globe">
+                <div class="globe"></div>
+            </div>
+            <div hidden id="siri-container"></div>
+            <h1 class="title" id="title">Friend</h1>
+            <p hidden id="text-desc" class="description">Halo!, Saya "Friend" siap membantu untuk permasalahan anda....</p>
+            <div class="search-bar" id="search-bar">
+                <input type="text" placeholder="Type here">
+                <div class="icons">
+                    <button class="icon-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <button id="MicBtn" class="icon-btn">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <button class="icon-btn">
+                        <i class="fas fa-comment-alt"></i>
+                    </button>
+                    <button class="icon-btn">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start chat-canvas" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="offcanvasScrollingLabel">Chats</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div id="chat-canvas-body" class="offcanvas-body">
+                <!-- Chatting code here -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Load jQuery first -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
+
+
+    <!-- Then load the scripts dependent on jQuery -->
+    <script src="assets/vendor/texllate/jquery.fittext.js"></script>
+    <script src="assets/vendor/texllate/jquery.lettering.js"></script>
+    <script src="http://jschr.github.io/textillate/jquery.textillate.js"></script>
+
+    <script src="main.js"></script>
+    <script src="controller.js"></script>
+    <script src="/eel.js"></script>
+    
+</body>
+</html>
